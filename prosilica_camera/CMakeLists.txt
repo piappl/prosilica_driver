@@ -29,7 +29,7 @@ catkin_package()
 add_library(prosilica src/libprosilica/prosilica.cpp)
 target_link_libraries(prosilica ${catkin_LIBRARIES})
 
-add_executable(prosilica_node src/nodes/prosilica_node.cpp)
+add_executable(prosilica_node src/nodes/prosilica_driver.cpp)
 target_link_libraries(prosilica_node 
    prosilica 
    ${Boost_LIBRARIES} 
